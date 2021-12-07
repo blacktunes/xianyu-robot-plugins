@@ -15,8 +15,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "rimraf lib && tsc",
-    "publish": "lerna publish"
+    "build": "rimraf lib && tsc"
   },
   "dependencies": {
     "axios": "^0.24.0",

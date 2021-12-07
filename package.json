@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "lerna run build",
-    "push": "lerna publish"
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:build": "lerna run build",
+    "lerna:publish": "lerna publish"
   },
   "devDependencies": {
     "@types/node": "^16.11.12",
@@ -14,5 +15,9 @@
     "lerna": "^4.0.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.5.2"
-  }
+  },
+  "private": true,
+  "workspaces": [
+    "packages/**/*"
+  ]
 }
