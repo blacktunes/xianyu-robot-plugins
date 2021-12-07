@@ -4,7 +4,8 @@
   "description": "随机色图插件",
   "author": "blacktunes <blacktunes@foxmail.com>",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "license": "MIT",
   "main": "lib/index.js",
