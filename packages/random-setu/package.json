@@ -1,0 +1,26 @@
+{
+  "name": "@xianyu-robot/random-setu",
+  "version": "1.0.0",
+  "description": "随机色图插件",
+  "author": "blacktunes <blacktunes@foxmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "publish": "lerna publish"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "jimp": "^0.16.1",
+    "xianyu-robot": "^4.16.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "xianyu-robot-plugins",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "lerna run build",
+    "push": "lerna publish"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^8.4.1",
+    "lerna": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.2"
+  }
+}
