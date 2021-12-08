@@ -1,6 +1,6 @@
 {
   "name": "@xianyu-robot/random-setu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "随机色图插件",
   "author": "blacktunes <blacktunes@foxmail.com>",
   "publishConfig": {

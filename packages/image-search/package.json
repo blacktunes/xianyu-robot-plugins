@@ -1,6 +1,6 @@
 {
   "name": "@xianyu-robot/image-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "搜图插件",
   "author": "blacktunes <blacktunes@foxmail.com>",
   "publishConfig": {
