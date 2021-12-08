@@ -5,7 +5,7 @@
   "scripts": {
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build": "lerna run build",
-    "lerna:publish": "lerna publish"
+    "lerna:publish": "lerna bootstrap && lerna run build && lerna publish"
   },
   "devDependencies": {
     "@types/node": "^16.11.12",

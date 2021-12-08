@@ -3,22 +3,22 @@ import { saucenao } from './modules/saucenao'
 import { whatanime } from './modules/whatanime'
 
 interface SearchPicConfig {
-  saucenaoKeyword: string
-  saucenaoApiKey: string
-  whatanimeKeyword: string
+  saucenao_keyword: string
+  saucenao_api_key: string
+  whatanime_keyword: string
 }
 
 export default class SearchPic extends BotPlugin {
   name = '搜图'
   config: SearchPicConfig = {
-    saucenaoKeyword: '#sn',
-    saucenaoApiKey: '',
-    whatanimeKeyword: '#wa',
+    saucenao_keyword: '#sn',
+    saucenao_api_key: '',
+    whatanime_keyword: '#wa',
   }
 
   init = () => {
     this.Command
-      .command(this.config.saucenaoKeyword)
+      .command(this.config.saucenao_keyword)
       .desc('使用saucenao搜图')
       .action('group', e => {
         this.Bot.Api.sendGroupMsg(e.group_id, `${this.Bot.CQCode.reply(e.message_id)}亮图吧`)
@@ -28,7 +28,7 @@ export default class SearchPic extends BotPlugin {
             return true
           }
           if (/(?<=url=).*?(?=\])/.test(msg)) {
-            saucenao(this.Bot, this.name, _e.group_id, _e.sender.user_id, _e.message, _e.message_id, this.config.saucenaoApiKey)
+            saucenao(this.Bot, this.name, _e.group_id, _e.sender.user_id, _e.message, _e.message_id, this.config.saucenao_api_key)
           } else {
             this.Bot.Api.sendGroupMsg(e.group_id, `${this.Bot.CQCode.reply(e.message_id)}不搜算了`)
           }
@@ -37,7 +37,7 @@ export default class SearchPic extends BotPlugin {
       })
 
     this.Command
-      .command(this.config.whatanimeKeyword)
+      .command(this.config.whatanime_keyword)
       .desc('使用whatanime搜图')
       .action('group', e => {
         this.Bot.Api.sendGroupMsg(e.group_id, `${this.Bot.CQCode.reply(e.message_id)}亮图吧`)
