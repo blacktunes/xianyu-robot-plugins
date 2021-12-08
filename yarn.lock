@@ -5570,10 +5570,10 @@ xhr@^2.0.1:
     parse-headers "^2.0.0"
     xtend "^4.0.0"
 
-xianyu-robot@^4.16.0:
-  version "4.16.0"
-  resolved "https://registry.npmmirror.com/xianyu-robot/download/xianyu-robot-4.16.0.tgz#c73a8e44ede8a2a3695ad7dd143dfd686dddb6e4"
-  integrity sha512-/+rGHwAyNy5UsQHbAD1Ry8r6Bs5frbs8OA4D2Y4q3fb4e2z8qsWDKZn507RtbXHXWOorS4vaY22rindhKcnq5g==
+xianyu-robot@^4.17.0:
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/xianyu-robot/-/xianyu-robot-4.17.0.tgz#11f3fbbabdcf093f5bc9e8ede66b93f789c3342b"
+  integrity sha512-2sQEftEmTy1hrIu+RApuRCOVUks4+IdIYhyhYAv2SVg7mrrq8ECCTbRzfN9eg0R1zJp2pK1Yno4V/C1AwGwK6w==
   dependencies:
     colors "^1.4.0"
     fs-extra "^9.0.1"

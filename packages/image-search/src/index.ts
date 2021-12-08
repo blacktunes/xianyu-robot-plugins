@@ -3,18 +3,22 @@ import { saucenao } from './modules/saucenao'
 import { whatanime } from './modules/whatanime'
 
 interface SearchPicConfig {
+  saucenaoKeyword: string
   saucenaoApiKey: string
+  whatanimeKeyword: string
 }
 
 export default class SearchPic extends BotPlugin {
   name = '搜图'
   config: SearchPicConfig = {
-    saucenaoApiKey: ''
+    saucenaoKeyword: '#sn',
+    saucenaoApiKey: '',
+    whatanimeKeyword: '#wa',
   }
 
   init = () => {
     this.Command
-      .command('#sn')
+      .command(this.config.saucenaoKeyword)
       .desc('使用saucenao搜图')
       .action('group', e => {
         this.Bot.Api.sendGroupMsg(e.group_id, `${this.Bot.CQCode.reply(e.message_id)}亮图吧`)
@@ -33,7 +37,7 @@ export default class SearchPic extends BotPlugin {
       })
 
     this.Command
-      .command('#wa')
+      .command(this.config.whatanimeKeyword)
       .desc('使用whatanime搜图')
       .action('group', e => {
         this.Bot.Api.sendGroupMsg(e.group_id, `${this.Bot.CQCode.reply(e.message_id)}亮图吧`)

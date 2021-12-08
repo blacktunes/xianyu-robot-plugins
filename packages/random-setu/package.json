@@ -21,6 +21,6 @@
   "dependencies": {
     "axios": "^0.24.0",
     "jimp": "^0.16.1",
-    "xianyu-robot": "^4.16.0"
+    "xianyu-robot": "^4.17.0"
   }
 }
