@@ -1,0 +1,24 @@
+{
+  "name": "@xianyu-robot/repeat",
+  "version": "1.0.0",
+  "description": "复读插件",
+  "author": "blacktunes <blacktunes@foxmail.com>",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc"
+  },
+  "dependencies": {
+    "xianyu-robot": "^4.17.0"
+  }
+}
