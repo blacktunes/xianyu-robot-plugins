@@ -1,0 +1,28 @@
+{
+  "name": "@xianyu-robot/dynamic",
+  "version": "1.0.0",
+  "description": "B站动态推送插件",
+  "author": "blacktunes <blacktunes@foxmail.com>",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "fs-extra": "^10.0.0",
+    "node-schedule": "^2.1.0",
+    "puppeteer": "^13.0.1",
+    "xianyu-robot": "^4.18.0"
+  }
+}

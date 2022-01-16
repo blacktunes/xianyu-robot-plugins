@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ESNext",
+    "diagnostics": false,
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "watch": false,
+    "allowSyntheticDefaultImports": false,
+    "resolveJsonModule": true,
+    "declaration":true,
+    "alwaysStrict": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/node_modules/*"
+  ]
+}
