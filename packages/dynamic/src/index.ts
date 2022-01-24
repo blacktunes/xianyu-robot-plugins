@@ -107,7 +107,7 @@ export default class Live extends BotPlugin {
           schedule.scheduleJob(key, '0 * * * * *', () => {
             this.getDynamicId(key)
               .then(async dynamic_id_str => {
-                if (watchList[key]['dynamic_id_str'] !== dynamic_id_str && !fs.existsSync(`${config.path}/${dynamic_id_str}.png`)) {
+                if (watchList[key]['dynamic_id_str'] !== dynamic_id_str && !fs.existsSync(`${config.path}/${watchList[key].name}-${dynamic_id_str}.png`)) {
                   this.savePic(watchList[key].name, dynamic_id_str, config.path)
                     .then(() => {
                       watchList[key]['dynamic_id_str'] = dynamic_id_str
