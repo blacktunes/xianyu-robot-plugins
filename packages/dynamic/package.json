@@ -1,6 +1,6 @@
 {
   "name": "@xianyu-robot/dynamic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "B站动态推送插件",
   "author": "blacktunes <blacktunes@foxmail.com>",
   "publishConfig": {
